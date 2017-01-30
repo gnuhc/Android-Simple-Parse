@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/artistIdlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artist ID: " />
+
+    <TextView
+        android:id="@+id/artistId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/artistIdlabel" />
+
+    <TextView
+        android:id="@+id/artistNamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artistIdlabel"
+        android:text="Artist Name: " />
+
+    <TextView
+        android:id="@+id/artistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artistId"
+        android:layout_toRightOf="@+id/artistNamelabel" />
+
+    <TextView
+        android:id="@+id/collectionPricelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artistNamelabel"
+        android:text="Collection Price: $" />
+
+    <TextView
+        android:id="@+id/collectionPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artistName"
+        android:layout_toRightOf="@+id/collectionPricelabel" />
+
+    <TextView
+        android:id="@+id/isStreamablelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collectionPricelabel"
+        android:text="Streamability: " />
+
+    <TextView
+        android:id="@+id/isStreamable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collectionPrice"
+        android:layout_toRightOf="@+id/isStreamablelabel" />
+
+    <ImageView
+        android:id="@+id/artworkUrl60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#000000"
+        android:padding="1dp" />
+
+</RelativeLayout>
